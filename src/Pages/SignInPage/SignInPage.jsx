@@ -44,7 +44,6 @@ const SignInPage = () => {
 
             <div className='bg-base-200 font-poppins py-10'>
                 
-
                 <div className='lg:min-h-[700px] flex flex-col lg:justify-center lg:items-center'>
                     <div className='bg-white lg:p-16 lg:rounded-2xl'>
                         <h1 className='text-4xl text-center lg:mx-36 lg:mb-12'>Login</h1>

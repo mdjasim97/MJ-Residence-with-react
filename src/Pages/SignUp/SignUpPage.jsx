@@ -7,6 +7,9 @@ import { AuthContext } from '../../ContextProvider/ContextProvider';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { updateProfile } from 'firebase/auth';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const SignUpPage = () => {
 
     const { handleUserRegister } = useContext(AuthContext)
@@ -31,9 +34,9 @@ const SignUpPage = () => {
         // console.log(name, email, photo, password)
 
         setErrorMessage(" ")
-        
 
-        if(!Accepted){
+
+        if (!Accepted) {
             setErrorMessage("Please accept terms and condition");
             return
         }
@@ -43,12 +46,12 @@ const SignUpPage = () => {
             setErrorMessage("Must be at least 6 character password");
             return
         }
-        else if (!/[A-Z]/.test(password)){
+        else if (!/[A-Z]/.test(password)) {
             setErrorMessage("Must be at least 1 character Uppercase in password");
             return
         }
 
-        else if (!/[a-z]/.test(password)){
+        else if (!/[a-z]/.test(password)) {
             setErrorMessage("Must be at least 1 character lowercase in password");
             return
         }
@@ -57,12 +60,15 @@ const SignUpPage = () => {
         handleUserRegister(email, password)
             .then(result => {
                 const userProfile = result.user
-                console.log(userProfile)
+                // console.log(userProfile)
                 setSuccessfull("Profile Create Successfull.")
+                toast("Profiel Create Successfull.")
                 navigate("/signin")
 
-                updateProfile(result.user, {displayName : name, photoURL : photo})
-                .then(()=>console.log(result.user))
+                updateProfile(result.user, { displayName: name, photoURL: photo })
+                    .then(() => {
+                        // console.log(result.user)
+                    })
             })
             .catch((error) => {
                 // console.log(error.message)
@@ -73,6 +79,7 @@ const SignUpPage = () => {
     return (
         <div className='bg-base-200 p-2'>
             <Helmet><title>SignUp Page | MJ Residential </title></Helmet>
+            <ToastContainer/>
 
 
             <div className='flex flex-col lg:justify-center lg:items-center lg:py-16'>

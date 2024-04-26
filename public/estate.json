@@ -3,107 +3,125 @@
         "estate_title": "Luxury Villa with Ocean View",
         "id": 1,
         "segment_name": "Villa",
-        "description": "Experience ultimate luxury living with this stunning villa overlooking the ocean. This magnificent villa offers an unparalleled combination of elegance, privacy, and breathtaking ocean views. Boasting an expansive floor plan and exquisite design, every detail of this residence has been meticulously crafted to create an atmosphere of opulence and sophistication. Step into the grand foyer, adorned with soaring ceilings and a sweeping staircase, setting the tone for the lavish living spaces that lie beyond. The spacious living room features floor-to-ceiling windows that frame panoramic views of the sparkling ocean, while a cozy fireplace adds warmth and ambiance. Entertain guests in the formal dining room, complete with elegant chandeliers and seating for intimate gatherings. The gourmet kitchen is a chef's dream, equipped with top-of-the-line appliances, custom cabinetry, and a large island for culinary creations. Retreat to the luxurious master suite, which boasts a private balcony overlooking the water, a spa-like ensuite bathroom, and a spacious walk-in closet. Additional bedrooms offer comfort and privacy for family and guests, each appointed with its own ensuite bathroom and stunning views. Outside, the expansive terrace is an oasis of relaxation, featuring a sparkling infinity pool, lush gardens, and multiple seating areas for al fresco dining and entertaining. With direct access to the beach and close proximity to world-class amenities, this villa offers the ultimate coastal lifestyle. Whether you're seeking a serene retreat or a luxurious primary residence, this magnificent villa is sure to exceed your expectations.",
+        "description": "Experience ultimate luxury living with this stunning villa overlooking the ocean. This magnificent villa offers an unparalleled combination of elegance, privacy, and breathtaking ocean views.",
         "price": 1000000,
         "status": "sale",
         "area": 5000,
         "location": "Malibu, California",
-        "facilities": ["Swimming Pool", "Gym", "Spa", "Garden"]
+        "facilities": ["Swimming Pool", "Gym", "Spa", "Garden"],
+        "like": 125,
+        "love": 12
     },
     {
         "residential_image": "https://i.postimg.cc/3xr1kCDS/2.jpg",
         "estate_title": "Cozy Downtown Apartment",
         "id": 2,
         "segment_name": "Apartment",
-        "description": "Nestled in the heart of downtown, this cozy apartment offers a perfect blend of comfort and convenience. Whether you're a young professional seeking a vibrant urban lifestyle or a couple looking for a pied-à-terre in the city, this charming residence is sure to impress. Step inside to discover a bright and airy living space, with large windows that flood the interior with natural light. The open-concept layout seamlessly connects the living, dining, and kitchen areas, creating an ideal space for entertaining. The kitchen is equipped with modern appliances, ample storage, and a breakfast bar for casual dining. Unwind in the tranquil bedroom, which features plush carpeting, a spacious closet, and large windows overlooking the city skyline. The adjacent bathroom boasts sleek fixtures and a bathtub/shower combination. Additional highlights include hardwood floors, in-unit laundry, and access to a shared rooftop terrace with panoramic views of the city. With restaurants, shops, and public transportation all within walking distance, this apartment offers the ultimate in urban convenience. Don't miss your chance to experience downtown living at its finest!",
+        "description": "Nestled in the heart of downtown, this cozy apartment offers a perfect blend of comfort and convenience. Whether you're a young professional seeking a vibrant urban lifestyle or a couple looking for a pied-à-terre in the city, this charming residence is sure to impress.",
         "price": 2000,
         "status": "rent",
         "area": 800,
         "location": "New York City, New York",
-        "facilities": ["24/7 Security", "Fitness Center", "Laundry Room"]
+        "facilities": ["24/7 Security", "Fitness Center", "Laundry Room"],
+        "like": 135,
+        "love": 58
     },
     {
         "residential_image": "https://i.postimg.cc/3wvvNd9f/3.jpg",
         "estate_title": "Family-Friendly Suburban Home",
         "id": 3,
         "segment_name": "House",
-        "description": "Welcome to suburban bliss! This family-friendly home offers the perfect combination of comfort, space, and convenience. Situated in a quiet neighborhood with tree-lined streets and friendly neighbors, this charming residence is ideal for those seeking a peaceful suburban lifestyle. Step inside to discover a spacious and inviting interior, with an open-concept layout that's perfect for modern family living. The heart of the home is the expansive living room, featuring a cozy fireplace, built-in shelving, and large windows that flood the space with natural light. The adjacent dining area is perfect for family meals and gatherings, with sliding glass doors that lead out to the backyard. The gourmet kitchen is a chef's dream, boasting granite countertops, stainless steel appliances, and ample cabinet space for all your culinary needs. Upstairs, you'll find a luxurious master suite with a walk-in closet and ensuite bathroom, as well as three additional bedrooms and a full bathroom. The finished basement offers additional living space, perfect for a playroom, home office, or gym. Outside, the private backyard is an oasis of tranquility, with a patio, lush lawn, and mature landscaping. With top-rated schools, parks, and shopping centers nearby, this home offers the perfect blend of suburban charm and modern convenience. Don't miss your chance to make this your forever home!",
+        "description": "Welcome to suburban bliss! This family-friendly home offers the perfect combination of comfort, space, and convenience. Situated in a quiet neighborhood with tree-lined streets and friendly neighbors, this charming residence is ideal for those seeking a peaceful suburban lifestyle.",
         "price": 400000,
         "status": "sale",
         "area": 3000,
         "location": "Suburban Town, Anywhere",
-        "facilities": ["Backyard", "Garage", "Fireplace"]
+        "facilities": ["Backyard", "Garage", "Fireplace"],
+        "like": 75,
+        "love": 21
     },
     {
         "residential_image": "https://i.postimg.cc/QtnGzdZs/4.jpg",
         "estate_title": "Modern Loft in Arts District",
         "id": 4,
         "segment_name": "Loft",
-        "description": "Welcome to urban chic living at its finest! This modern loft is located in the heart of the vibrant arts district, surrounded by galleries, cafes, and cultural attractions. With its sleek design, open floor plan, and industrial-inspired aesthetic, this loft offers a truly unique living experience. Step inside to discover soaring ceilings, exposed ductwork, and concrete floors that lend an air of urban sophistication to the space. The main living area is flooded with natural light, thanks to oversized windows that frame views of the city skyline. The open kitchen features stainless steel appliances, quartz countertops, and a breakfast bar for casual dining. The adjacent dining area is perfect for entertaining, with plenty of space for hosting dinner parties and gatherings. The bedroom area is tucked away for privacy, with sliding glass doors that can be closed for added seclusion. The ensuite bathroom boasts modern fixtures, a walk-in shower, and sleek tile accents. Additional highlights of this loft include in-unit laundry, central air conditioning, and assigned parking. With its prime location and stylish design, this loft offers the ultimate urban lifestyle. Don't miss your chance to call it home!",
+        "description": "Welcome to urban chic living at its finest! This modern loft is located in the heart of the vibrant arts district, surrounded by galleries, cafes, and cultural attractions. With its sleek design, open floor plan, and industrial-inspired aesthetic, this loft offers a truly unique living experience. ",
         "price": 3000,
         "status": "rent",
         "area": 1200,
         "location": "Los Angeles, California",
-        "facilities": ["Exposed Brick Walls", "High Ceilings", "Balcony"]
+        "facilities": ["Exposed Brick Walls", "High Ceilings", "Balcony"],
+        "like": 358,
+        "love": 101
     },
     {
         "residential_image": "https://i.postimg.cc/90R5HHc9/5.jpg",
         "estate_title": "Scenic Lakeside Cabin",
         "id": 5,
         "segment_name": "Cabin",
-        "description": "Escape to nature with this charming lakeside cabin! Nestled amidst towering pines and overlooking the serene waters of Lake Tahoe, this rustic retreat offers the perfect combination of tranquility and adventure. Step inside to discover a cozy interior, with exposed wood beams, knotty pine paneling, and a stone fireplace that creates a warm and inviting atmosphere. The main living area is ideal for gathering with family and friends, with comfortable seating, a dining table, and large windows that frame picturesque views of the lake. The well-equipped kitchen features modern appliances, ample counter space, and everything you need to whip up delicious meals. Retreat to the master bedroom, which boasts a plush queen-sized bed, vaulted ceilings, and views of the surrounding forest. The second bedroom offers additional sleeping space, perfect for children or guests. Outside, the expansive deck is the perfect spot for soaking up the sun, grilling out, or simply enjoying the peace and quiet of nature. With its prime location just steps from the water, this cabin is an outdoor enthusiast's dream. Spend your days swimming, fishing, hiking, and exploring the natural beauty of Lake Tahoe. Whether you're seeking a weekend getaway or a longer retreat, this lakeside cabin is sure to inspire unforgettable memories!",
+        "description": "Escape to nature with this charming lakeside cabin! Nestled amidst towering pines and overlooking the serene waters of Lake Tahoe, this rustic retreat offers the perfect combination of tranquility and adventure.",
         "price": 500000,
         "status": "sale",
         "area": 2000,
         "location": "Lake Tahoe, California",
-        "facilities": ["Dock", "Fire Pit", "Boat Rental"]
+        "facilities": ["Dock", "Fire Pit", "Boat Rental"],
+        "like": 784,
+        "love": 300
     },
     {
         "residential_image": "https://i.postimg.cc/d3TXSR9m/6.jpg",
         "estate_title": "Sunny Beachfront Condo",
         "id": 6,
         "segment_name": "Condo",
-        "description": "Live the beach lifestyle with this sunny condo located right on the waterfront! Situated in the heart of Miami Beach, this stylish residence offers the perfect combination of luxury, convenience, and coastal charm. Step inside to discover a bright and airy interior, with floor-to-ceiling windows that frame panoramic views of the ocean. The open-concept layout seamlessly connects the living, dining, and kitchen areas, creating an ideal space for entertaining. The gourmet kitchen features sleek cabinetry, granite countertops, and top-of-the-line appliances, making it a chef's dream. Retire to the spacious master suite, which boasts a private balcony overlooking the water, a spa-like ensuite bathroom, and a walk-in closet. The guest bedroom offers comfort and privacy for family and friends, with its own ensuite bathroom and stunning views. Outside, the expansive terrace is the perfect spot for soaking up the sun, dining al fresco, or simply enjoying the sights and sounds of the ocean. With its prime location just steps from the sand, this condo offers easy access to all the beachfront amenities you could desire. Whether you're a full-time resident or a part-time vacationer, this beachfront condo is sure to exceed your expectations!",
+        "description": "Live the beach lifestyle with this sunny condo located right on the waterfront! Situated in the heart of Miami Beach, this stylish residence offers the perfect combination of luxury, convenience, and coastal charm.",
         "price": 600000,
         "status": "sale",
         "area": 1500,
         "location": "Miami Beach, Florida",
-        "facilities": ["Beach Access", "Poolside Bar", "Tennis Courts"]
+        "facilities": ["Beach Access", "Poolside Bar", "Tennis Courts"],
+        "like": 52,
+        "love": 10
     },
     {
         "residential_image": "https://i.postimg.cc/RVwCWwzH/7.jpg",
         "estate_title": "Historic Townhouse in Downtown",
         "id": 7,
         "segment_name": "Townhouse",
-        "description": "Step back in time with this historic townhouse located in the heart of downtown! Built in the 19th century and lovingly restored to its former glory, this elegant residence offers a rare opportunity to own a piece of history. From its ornate facade to its meticulously preserved interior, every detail of this townhouse exudes old-world charm and character. Step inside to discover a grand foyer, with soaring ceilings, intricate moldings, and a sweeping staircase that harkens back to a bygone era. The main living area is perfect for entertaining, with multiple seating areas, a formal dining room, and a cozy fireplace for chilly evenings. The kitchen has been updated with modern appliances and fixtures, while still retaining its vintage appeal. Upstairs, the master suite is a tranquil retreat, with a luxurious ensuite bathroom, a walk-in closet, and views of the bustling city streets below. Additional bedrooms offer comfort and privacy for family and guests, each with its own unique features and period details. Outside, the private courtyard is a hidden oasis, with lush landscaping, a fountain, and plenty of space for outdoor entertaining. With its prime location just steps from shops, restaurants, and cultural attractions, this historic townhouse offers the ultimate in downtown living. Don't miss your chance to own a piece of history!",
+        "description": "Step back in time with this historic townhouse located in the heart of downtown! Built in the 19th century and lovingly restored to its former glory, this elegant residence offers a rare opportunity to own a piece of history.",
         "price": 800000,
         "status": "sale",
         "area": 2500,
         "location": "Boston, Massachusetts",
-        "facilities": ["Brick Patio", "Hardwood Floors", "Library"]
+        "facilities": ["Brick Patio", "Hardwood Floors", "Library"],
+        "like": 525,
+        "love": 350
     },
     {
         "residential_image": "https://i.postimg.cc/5tzWrVNF/8.jpg",
         "estate_title": "Mountain Retreat with Panoramic Views",
         "id": 8,
         "segment_name": "Retreat",
-        "description": "Escape to the mountains with this stunning retreat nestled amidst the natural beauty of Aspen! Perched high above the valley floor, this secluded residence offers panoramic views of the surrounding mountains, making it the perfect place to unwind and reconnect with nature. Step inside to discover a warm and inviting interior, with rustic wood beams, stone accents, and floor-to-ceiling windows that frame breathtaking vistas. The main living area is centered around a cozy fireplace, creating a comfortable space for gathering with family and friends. The gourmet kitchen features high-end appliances, granite countertops, and a breakfast bar for casual dining. Retreat to the spacious master suite, which boasts a private balcony, a spa-like ensuite bathroom, and a walk-in closet. Additional bedrooms offer comfort and privacy for guests, each appointed with its own ensuite bathroom and stunning views. Outside, the expansive deck is the perfect spot for soaking up the sun, stargazing, or simply enjoying the peace and quiet of the mountains. With its prime location just minutes from world-class skiing, hiking, and outdoor adventures, this mountain retreat offers the ultimate in alpine living. Whether you're seeking a weekend getaway or a permanent residence, this Aspen retreat is sure to inspire unforgettable memories!",
+        "description": "Escape to the mountains with this stunning retreat nestled amidst the natural beauty of Aspen! Perched high above the valley floor, this secluded residence offers panoramic views of the surrounding mountains, making it the perfect place to unwind and reconnect with nature.",
         "price": 700000,
         "status": "sale",
         "area": 3500,
         "location": "Aspen, Colorado",
-        "facilities": ["Hot Tub", "Wraparound Deck", "Home Theater"]
+        "facilities": ["Hot Tub", "Wraparound Deck", "Home Theater"],
+        "like": 85,
+        "love": 36
     },
     {
         "residential_image": "https://i.postimg.cc/6q5SBJwc/9.jpg",
         "estate_title": "Contemporary Urban Penthouse",
         "id": 9,
         "segment_name": "Penthouse",
-        "description": "Live the high life with this contemporary penthouse located in the heart of San Francisco! Perched atop a luxury high-rise building, this stunning residence offers panoramic views of the city skyline, the bay, and beyond. Step inside to discover a sleek and modern interior, with floor-to-ceiling windows, designer finishes, and an open-concept layout that's perfect for entertaining. The spacious living room features a gas fireplace, built-in shelving, and access to a private balcony with sweeping views of the city below. The adjacent dining area offers plenty of space for hosting dinner parties and gatherings, while the gourmet kitchen is a chef's dream, with top-of-the-line appliances, quartz countertops, and a large island for prep and serving. Retreat to the luxurious master suite, which boasts a king-sized bed, a walk-in closet, and a spa-like ensuite bathroom with a soaking tub and separate shower. The guest bedroom offers additional sleeping space for family and friends, with its own ensuite bathroom and stunning views. Additional highlights of this penthouse include hardwood floors, in-unit laundry, and access to building amenities such as a fitness center, concierge service, and secure parking. With its prime location just steps from shops, restaurants, and cultural attractions, this urban penthouse offers the ultimate in city living. Don't miss your chance to experience luxury living at its finest!",
+        "description": "Live the high life with this contemporary penthouse located in the heart of San Francisco! Perched atop a luxury high-rise building, this stunning residence offers panoramic views of the city skyline, the bay, and beyond.",
         "price": 12000,
         "status": "rent",
         "area": 2000,
         "location": "San Francisco, California",
-        "facilities": ["Private Elevator", "Roof Deck", "Wine Cellar"]
+        "facilities": ["Private Elevator", "Roof Deck", "Wine Cellar"],
+        "like": 251,
+        "love": 67
     }
 ]
