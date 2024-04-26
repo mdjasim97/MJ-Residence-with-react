@@ -20,6 +20,12 @@ const Header = () => {
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
         <li><NavLink to="/service">Service</NavLink></li>
+
+        {
+            user && <>
+                <li><NavLink to="/service">Update Profile</NavLink></li>
+            </>
+        }
     </>
 
     return (

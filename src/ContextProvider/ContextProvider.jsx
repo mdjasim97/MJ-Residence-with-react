@@ -1,13 +1,15 @@
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth';
+import {FacebookAuthProvider, GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth';
 import React, { createContext, useEffect, useState } from 'react';
 import auth from '../firebase/firebase.config';
-// import { GoogleAuthProvider } from 'firebase/auth/cordova';
 export const AuthContext = createContext()
 
 const ContextProvider = ({children}) => {
 
     const [user, setUser] = useState([])
-    // const GoogleProvider = new GoogleAuthProvider()
+
+    const GoogleProvider = new GoogleAuthProvider()
+    const GitHubProbider = new GithubAuthProvider()
+    const FacebookProvider = new FacebookAuthProvider()
 
 
     const handleUserRegister = (email, password) => {
@@ -19,9 +21,17 @@ const ContextProvider = ({children}) => {
     }
 
 
-    // const signInwithGoogle = () => {
-    //     return signInWithPopup(auth, GoogleProvider)
-    // }
+    const signInwithGoogle = () => {
+        return signInWithPopup(auth, GoogleProvider)
+    }
+
+    const signInwithGithub = () => {
+        return signInWithPopup(auth, GitHubProbider)
+    }
+
+    const signInwithFacebook = () => {
+        return signInWithPopup(auth, FacebookProvider)
+    }
 
 
     const logOut = () => {
@@ -37,7 +47,7 @@ const ContextProvider = ({children}) => {
         return () => unSubcribe()
     },[])
 
-    const authInfo = {user, handleUserRegister, handleUserSignIn, logOut}
+    const authInfo = {user, handleUserRegister, handleUserSignIn, logOut, signInwithGoogle, signInwithGithub, signInwithFacebook}
 
     return (
         <AuthContext.Provider value={authInfo}>

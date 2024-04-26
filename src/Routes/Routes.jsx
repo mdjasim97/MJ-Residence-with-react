@@ -5,6 +5,7 @@ import Root from "../Component/Root/Root";
 import SignInPage from "../Pages/SignInPage/SignInPage";
 import SignUpPage from "../Pages/SignUp/SignUpPage";
 import DetailsPage from "../Pages/DetailsPage/DetailsPage";
+import PrivateRoutes from "./PrivateRoutes";
 
 const route = createBrowserRouter([
     {
@@ -29,7 +30,7 @@ const route = createBrowserRouter([
 
         {
             path : "/details/:id",
-            element : <DetailsPage></DetailsPage>,
+            element :<PrivateRoutes><DetailsPage></DetailsPage></PrivateRoutes> ,
             loader : ()=> fetch("estate.json")
         }
     ]

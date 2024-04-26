@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
-import Header from '../../Component/Header/Header';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../../ContextProvider/ContextProvider';
-import { FaGoogle, FaGithub, FaFacebook} from "react-icons/fa";
+import { FaEye, FaEyeSlash, FaGoogle, FaGithub, FaFacebook } from "react-icons/fa";
 
 const SignInPage = () => {
 
-    const { handleUserSignIn} = useContext(AuthContext)
+    const { handleUserSignIn, signInwithGoogle, signInwithGithub, signInwithFacebook } = useContext(AuthContext)
     const navigate = useNavigate()
+    const location = useLocation()
 
-    // console.log(signInwithGoogle)
+    const [showPassword, setShowPassword] = useState(false)
+
 
 
     const handleSignInUser = (e) => {
@@ -25,25 +26,57 @@ const SignInPage = () => {
             .then(result => {
                 const userSingIn = result.user
                 console.log(userSingIn)
-                navigate("/")
-
+                alert("User SignIn successfull.")
+                navigate(location?.state ? location.state : "/")
             })
             .catch(error => console.log(error))
     }
 
-    // const handleSignInwithGoogle = () => {
-    //     signInwithGoogle()
-    //     .then(result=> console.log(result.user))
-    //     .catch(error => console.log(error))
-    // }
+    const handleSignInwithGoogle = () => {
+        signInwithGoogle()
+            .then(result => {
+                console.log(result.user)
+                alert("User SignIn successfull.")
+                navigate(location?.state ? location.state : "/")
+            })
+            .catch(error => console.log(error))
+    }
+
+
+    const handleSignInwithGithub = () => {
+        signInwithGithub()
+            .then(result => {
+                console.log(result.user)
+                alert("User SignIn successfull.")
+                navigate(location?.state ? location.state : "/")
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
+
+
+    const handleSignInWithFacebook = () => {
+        signInwithFacebook()
+            .then(result => {
+                console.log(result.user)
+                alert("User SignIn successfull.")
+                navigate(location?.state ? location.state : "/")
+            })
+            .catch(error => console.log(error))
+    }
+
+
+    const handlePasswordShow = () => {
+        setShowPassword(!showPassword)
+    }
 
     return (
-        <div>
+        <div className='lg:my-20'>
 
             <Helmet><title>Login Page | MJ Residential</title></Helmet>
 
             <div className='bg-base-200 font-poppins py-10'>
-                
                 <div className='lg:min-h-[700px] flex flex-col lg:justify-center lg:items-center'>
                     <div className='bg-white lg:p-16 lg:rounded-2xl'>
                         <h1 className='text-4xl text-center lg:mx-36 lg:mb-12'>Login</h1>
@@ -59,7 +92,11 @@ const SignInPage = () => {
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="password" name='password' placeholder="Enter your password" className="input bg-base-200" required />
+                                <div className='relative'>
+                                    <input type={showPassword ? "text" : "password"} name='password' placeholder="Enter your password" className="input bg-base-200 w-full " required />
+
+                                    <span onClick={handlePasswordShow} className='absolute top-4 right-4'>{showPassword ? <FaEyeSlash /> : <FaEye />}</span>
+                                </div>
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
@@ -76,16 +113,15 @@ const SignInPage = () => {
                         {loginError && <p className='text-red-600 font-bold text-center'>{loginError}</p>} */}
 
 
-                        <div className='bg-base-200 py-4'>
 
-                            <h1 className='text-center mb-4 text-3xl font-semibold'>Login With</h1>
-                            <div className='flex justify-center gap-5'>
-                                <NavLink><FaGoogle className='text-5xl text-red-500'/></NavLink>
-                                <NavLink><FaGithub className='text-5xl'/></NavLink>
-                                <NavLink><FaFacebook className='text-5xl text-blue-600'/></NavLink>
-                            </div>
 
+                        <h1 className='text-center mb-4 text-3xl font-semibold'>Login With</h1>
+                        <div className='flex justify-center gap-2'>
+                            <button onClick={handleSignInwithGoogle} className='btn bg-[#f7c65c] text-red-900 font-bold text-xl'><FaGoogle /> Google</button>
+                            <button onClick={handleSignInwithGithub} className='btn bg-[#474747] text-white font-bold text-xl'><FaGithub /> Github</button>
+                            <button onClick={handleSignInWithFacebook} className='btn bg-[#3a72c7] text-white font-bold text-xl'><FaFacebook /> Facebook</button>
                         </div>
+
                     </div>
                 </div>
 
