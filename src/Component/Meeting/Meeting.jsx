@@ -31,7 +31,7 @@ const Meeting = () => {
             <div className='grid  lg:grid-cols-3'>
 
                 <div className='lg:col-span-2 border-2 rounded-2xl lg:p-5 lg:mr-10 p-2 m-2 mt-10'>
-                    <p className='text-4xl lg:my-16 lg:pr-10 text-justify p-2 lg:text-center'>Submit Your Details, We Will Get In Touch & Schedule A Meeting.</p>
+                    <p className='text-2xl lg:text-4xl lg:my-16 lg:pr-10 text-justify p-2 lg:text-center'>Submit Your Details, We Will Get In Touch & Schedule A Meeting.</p>
 
 
                     <form className="lg:mr-10" onSubmit={handleMeeting}>
@@ -83,8 +83,8 @@ const Meeting = () => {
                 </div>
 
                 <div className='border-2 rounded-2xl lg:my-10 m-2 p-2'>
-                    <h1 className='text-3xl text-center mt-10 lg:hidden'>Contact Us</h1>
-                    <p className='text-4xl pt-10 text-justify'> Call us directly and schedule a meeting right now </p>
+                    <h1 className='text-3xl text-center mb-5 lg:mb-0 lg:mt-10 lg:hidden'>Contact Us</h1>
+                    <p className='text-2xl lg:text-4xl lg:pt-10 text-justify'> Call us directly and schedule a meeting right now </p>
 
                     <button className='bg-black h-16 w-full text-4xl text-white my-16'> 01784293797</button>
                 </div>

@@ -19,6 +19,7 @@ const SignUpPage = () => {
     const [errorMessage, setErrorMessage] = useState(" ")
     const [successfull, setSuccessfull] = useState(" ")
     const [terms, setTerms] = useState(false)
+    const [showPassword, setShowPassword] = useState(false)
 
 
 
@@ -76,6 +77,11 @@ const SignUpPage = () => {
             })
     }
 
+
+    const handlePasswordShow = () => {
+        setShowPassword(!showPassword)
+    }
+
     return (
         <div className='bg-base-200 p-2'>
             <Helmet><title>SignUp Page | MJ Residential </title></Helmet>
@@ -113,10 +119,10 @@ const SignUpPage = () => {
                                 <span className="label-text">Password</span>
                             </label>
                             <div className='relative'>
-                                <input type="password" name='password' placeholder="Enter your password" className="input bg-base-200 w-full" required />
-                                {/* <span className='absolute right-3 top-4'>
-                                    {showPassword ? <FaEyeSlash onClick={handleShowPassword} /> : <FaEye onClick={handleShowPassword} />}
-                                </span> */}
+                                <input type={showPassword? "text" : "password"} name='password' placeholder="Enter your password" className="input bg-base-200 w-full" required />
+                                <span className='absolute right-3 top-4'>
+                                    {showPassword ? <FaEyeSlash onClick={handlePasswordShow} /> : <FaEye onClick={handlePasswordShow} />}
+                                </span>
                             </div>
                         </div>
 

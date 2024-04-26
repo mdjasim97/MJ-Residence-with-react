@@ -109,8 +109,6 @@ const SignInPage = () => {
 
 
                         <p className='text-center my-5'>Dont’t Have An  Account ? <Link to="/signup" className="text-blue-600 font-bold">Register</Link></p>
-                        {/* {successfull && <p className='text-green-600 font-bold text-center'>{successfull}</p>}
-                        {loginError && <p className='text-red-600 font-bold text-center'>{loginError}</p>} */}
 
 
 

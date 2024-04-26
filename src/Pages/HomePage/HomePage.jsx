@@ -30,7 +30,7 @@ const HomePage = () => {
             <Slider></Slider>
 
             <div>
-                <h1 className="text-center text-5xl font-bold mt-10">Our Residential Properties </h1>
+                <h1 className="text-center text-3xl lg:text-5xl font-bold mt-10">Our Residential Properties </h1>
                 <p className="text-center my-5">Handpicked properties by our team</p>
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 my-14">
@@ -42,7 +42,7 @@ const HomePage = () => {
 
 
             <div>
-                <h1 className="text-center text-5xl font-bold mt-10">Find Properties in These Cities</h1>
+                <h1 className="text-center text-3xl lg:text-5xl font-bold mt-10">Find Properties in These Cities</h1>
                 <p className="text-center my-5">Handpicked properties by our team</p>
 
 

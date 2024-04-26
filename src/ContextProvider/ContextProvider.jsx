@@ -16,6 +16,10 @@ const ContextProvider = ({children}) => {
         return createUserWithEmailAndPassword(auth, email, password)
     }
 
+    const UserProfileUpdate = (email, password) => {
+        return createUserWithEmailAndPassword(auth, email, password)
+    }
+
     const handleUserSignIn = (email, password) => {
         return signInWithEmailAndPassword(auth, email, password)
     }
@@ -47,7 +51,7 @@ const ContextProvider = ({children}) => {
         return () => unSubcribe()
     },[])
 
-    const authInfo = {user, handleUserRegister, handleUserSignIn, logOut, signInwithGoogle, signInwithGithub, signInwithFacebook}
+    const authInfo = {user, handleUserRegister, handleUserSignIn, logOut, signInwithGoogle, signInwithGithub, signInwithFacebook, UserProfileUpdate}
 
     return (
         <AuthContext.Provider value={authInfo}>

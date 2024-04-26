@@ -6,6 +6,7 @@ import SignInPage from "../Pages/SignInPage/SignInPage";
 import SignUpPage from "../Pages/SignUp/SignUpPage";
 import DetailsPage from "../Pages/DetailsPage/DetailsPage";
 import PrivateRoutes from "./PrivateRoutes";
+import ProfilePage from "../Pages/ProfiePage/ProfilePage";
 
 const route = createBrowserRouter([
     {
@@ -32,6 +33,10 @@ const route = createBrowserRouter([
             path : "/details/:id",
             element :<PrivateRoutes><DetailsPage></DetailsPage></PrivateRoutes> ,
             loader : ()=> fetch("estate.json")
+        },
+        {
+            path : "/updateprofile",
+            element : <PrivateRoutes><ProfilePage></ProfilePage></PrivateRoutes>
         }
     ]
 }

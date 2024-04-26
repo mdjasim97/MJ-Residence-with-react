@@ -23,7 +23,7 @@ const Header = () => {
 
         {
             user && <>
-                <li><NavLink to="/service">Update Profile</NavLink></li>
+                <li><NavLink to="/updateprofile">Update Profile</NavLink></li>
             </>
         }
     </>
