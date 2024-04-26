@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import Header from "../../Component/Header/Header";
 import { useEffect, useState } from "react";
 import Slider from "../../Component/Slider/Slider";
 import Residential from "../../Component/Residential/Residential";
@@ -28,7 +27,6 @@ const HomePage = () => {
                 <title>Home page | MJ Residential </title>
             </Helmet>
 
-            {/* <Header></Header> */}
             <Slider></Slider>
 
             <div>
@@ -47,9 +45,8 @@ const HomePage = () => {
                 <h1 className="text-center text-5xl font-bold mt-10">Find Properties in These Cities</h1>
                 <p className="text-center my-5">Handpicked properties by our team</p>
 
-                {/* image galery or city */}
-                <div className="">
 
+                <div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                         <div className="relative">
                             <img className="max-h-60 flex-1 w-full brightness-50" src={miami} alt="" />
