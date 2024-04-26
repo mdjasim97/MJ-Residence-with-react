@@ -16,13 +16,11 @@ const Header = () => {
         logOut()
     }
 
-
     const links = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
         <li><NavLink to="/service">Service</NavLink></li>
     </>
-
 
     return (
         <div>
