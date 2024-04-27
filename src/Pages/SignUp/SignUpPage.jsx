@@ -136,7 +136,7 @@ const SignUpPage = () => {
 
 
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary">Register</button>
+                            <button className="btn bg-[#23BE0A] text-white">Register</button>
                         </div>
                     </form>
                     <p className='text-center my-5'>Already have An Account ? <Link to="/signin" className="text-blue-600 font-bold">Login</Link></p>

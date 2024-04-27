@@ -75,7 +75,7 @@ const Meeting = () => {
                             <textarea name='comment' placeholder="Write Something" className="textarea textarea-bordered textarea-lg w-full " ></textarea>
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary"> Book Now</button>
+                            <button className="btn bg-[#23BE0A] text-white"> Book Now</button>
                         </div>
                     </form>
 
@@ -87,6 +87,19 @@ const Meeting = () => {
                     <p className='text-2xl lg:text-4xl lg:pt-10 text-justify'> Call us directly and schedule a meeting right now </p>
 
                     <button className='bg-black h-16 w-full text-4xl text-white my-16'> 01784293797</button>
+
+                    <h1 className='text-4xl font-bold'>Contact with Us</h1>
+                    <div className='w-full flex flex-col justify-center gap-3 my-5'>
+                        <button className='btn bg-slate-200 text-2xl'>Facebook</button>
+                        <button className='btn bg-slate-300 text-2xl'>Instagram</button>
+                        <button className='btn bg-blue-200 text-2xl'>LinkedIn</button>
+                        <button className='btn bg-green-300 text-2xl'>Twitter</button>
+                        <button className='btn bg-red-300 text-2xl'>GitHub</button>
+                    </div>
+                    <div className='text-center'>
+                        <p className='text-2xl font-bold'>Our Website </p>
+                        <p className=''>www.mjresidential.com</p>
+                    </div>
                 </div>
             </div>
 

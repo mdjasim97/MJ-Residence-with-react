@@ -7,10 +7,6 @@ const Header = () => {
 
     const { logOut, user } = useContext(AuthContext)
 
-    const profileName = () => {
-        console.log("Md Jasim Uddin")
-    }
-
 
     const handleLogOut = () => {
         logOut()
@@ -30,7 +26,7 @@ const Header = () => {
 
     return (
         <div>
-            <div className="navbar bg-base-200 py-10 my-5">
+            <div className="navbar bg-base-200 my-5">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

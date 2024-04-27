@@ -12,6 +12,7 @@ const SignInPage = () => {
     const location = useLocation()
 
     const [showPassword, setShowPassword] = useState(false)
+    const [errorMessage, setErrorMessage] = useState(" ")
 
 
 
@@ -29,7 +30,11 @@ const SignInPage = () => {
                 alert("User SignIn successfull.")
                 navigate(location?.state ? location.state : "/")
             })
-            .catch(error => console.log(error))
+            .catch(error => {
+                setErrorMessage(error)
+                alert(error, "Somethin is Worng... try later")
+
+            })
     }
 
     const handleSignInwithGoogle = () => {
@@ -39,7 +44,7 @@ const SignInPage = () => {
                 alert("User SignIn successfull.")
                 navigate(location?.state ? location.state : "/")
             })
-            .catch(error => console.log(error))
+            .catch(error => alert(error, "Somethin is Worng... try later"))
     }
 
 
@@ -52,6 +57,7 @@ const SignInPage = () => {
             })
             .catch(error => {
                 console.log(error)
+                alert(error, "Somethin is Worng... try later")
             })
     }
 
@@ -63,7 +69,9 @@ const SignInPage = () => {
                 alert("User SignIn successfull.")
                 navigate(location?.state ? location.state : "/")
             })
-            .catch(error => console.log(error))
+            .catch(error => {
+                alert(error, "Somethin is Worng... try later")
+            })
     }
 
 
@@ -72,7 +80,7 @@ const SignInPage = () => {
     }
 
     return (
-        <div className='lg:my-20'>
+        <div className='lg:my-20 m-2'>
 
             <Helmet><title>Login Page | MJ Residential</title></Helmet>
 
@@ -103,25 +111,24 @@ const SignInPage = () => {
                             </div>
 
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary">Login</button>
+                                <button className="btn bg-[#23BE0A] text-white">Login</button>
                             </div>
                         </form>
 
-
                         <p className='text-center my-5'>Dont’t Have An  Account ? <Link to="/signup" className="text-blue-600 font-bold">Register</Link></p>
-
-
-
 
                         <h1 className='text-center mb-4 text-3xl font-semibold'>Login With</h1>
                         <div className='flex justify-center gap-2'>
-                            <button onClick={handleSignInwithGoogle} className='btn bg-[#f7c65c] text-red-900 font-bold text-xl'><FaGoogle /> Google</button>
+                            <button onClick={handleSignInwithGoogle} className='btn bg-[#23BE0A] text-white font-bold text-xl'><FaGoogle /> Google</button>
                             <button onClick={handleSignInwithGithub} className='btn bg-[#474747] text-white font-bold text-xl'><FaGithub /> Github</button>
                             <button onClick={handleSignInWithFacebook} className='btn bg-[#3a72c7] text-white font-bold text-xl'><FaFacebook /> Facebook</button>
                         </div>
 
                     </div>
+
                 </div>
+
+
 
 
             </div>
