@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.active {
+    font-style: normal;
+    background-color: rgb(218, 215, 215) !Important; 
+    color: #1f1e1e !Important;
+    font-weight: 500;
+}
+
+.navbar {
+    position: sticky !Important;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden;
+}

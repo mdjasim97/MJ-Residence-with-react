@@ -35,7 +35,7 @@ const route = createBrowserRouter([
             loader : ()=> fetch("estate.json")
         },
         {
-            path : "/updateprofile",
+            path : "/updateProfile",
             element : <PrivateRoutes><ProfilePage></ProfilePage></PrivateRoutes>
         }
     ]

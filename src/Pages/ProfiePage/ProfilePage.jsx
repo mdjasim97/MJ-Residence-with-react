@@ -11,7 +11,7 @@ const ProfilePage = ({ children }) => {
     const { user} = useContext(AuthContext)
 
 
-    const handleUpdateProfile = (e) => {
+    const handleupdateProfile = (e) => {
         e.preventDefault()
 
         const form = new FormData(e.currentTarget);
@@ -24,7 +24,7 @@ const ProfilePage = ({ children }) => {
         updateProfile(user, { displayName: name, photoURL: photo, email : email })
             .then(() => {
                 console.log(user)
-                navigate(location?.state ? location.state : "/updateprofile")
+                navigate(location?.state ? location.state : "/updateProfile")
             }).catch(error => console.log(error))
 
     }
@@ -53,7 +53,7 @@ const ProfilePage = ({ children }) => {
                 <div className='m-2'>
                     <h1 className='text-4xl my-5 font-bold text-center'>Update Profile</h1>
 
-                    <form onSubmit={handleUpdateProfile} className='space-y-4 border-2 p-4 rounded-2xl'>
+                    <form onSubmit={handleupdateProfile} className='space-y-4 border-2 p-4 rounded-2xl'>
 
                         <div className="form-control">
                             <label className="label">
